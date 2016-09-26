@@ -10,49 +10,49 @@ from tools import *
 
 
 def netrs_download(address, name, date_str, save_dir):
-        cp = ConfigParser()
-        cp.read('settings.ini')
-        FTP_TIMEOUT = cp.getint('FTP', 'FTP_TIMEOUT')
-        FTP_PORT = cp.getint('FTP', 'FTP_PORT')
-        FTP_DEBUG_LEVEL = cp.getint('FTP', 'FTP_DEBUG_LEVEL')
-        ftp = FTP()
-        ftp.set_debuglevel(FTP_DEBUG_LEVEL)
+    cp = ConfigParser()
+    cp.read('settings.ini')
+    FTP_TIMEOUT = cp.getint('FTP', 'FTP_TIMEOUT')
+    FTP_PORT = cp.getint('FTP', 'FTP_PORT')
+    FTP_DEBUG_LEVEL = cp.getint('FTP', 'FTP_DEBUG_LEVEL')
+    ftp = FTP()
+    ftp.set_debuglevel(FTP_DEBUG_LEVEL)
+    try:
+        ymStr = date_str[:6]
+        year = date_str[:4]
+        month = date_str[4:6]
+        day = date_str[6:]
+        doy = day_of_year(year, month, day)
+        ftp.connect(address, FTP_PORT, FTP_TIMEOUT)
+        ftp.login()
+        ftp.cwd(ymStr)
+        files = ftp.nlst()
+        for item in files:
+            filename = item.split()[-1]
+            if (filename.endwiths('.T00')) and (name.upper() in filename.upper()):
+                remote_file_size = ftp.size(filename)
+                suffix = filename.split('.')[0][-1].lower()
+                save_file_name = name.lower() + doy + suffix + '.' + filename.split('.')[-1]
+                save_path = os.path.join(save_dir, save_file_name)
+                if not os.path.exists(save_dir):
+                    os.mkdir(save_dir)
+                if (not os.path.exists(save_path)) or remote_file_size > os.path.getsize(save_path):
+                    print(u"Downloading: {0}, save to {1}".format(filename, save_file_name))
+                    fp = open(save_path, 'wb')
+                    cmd = 'RETR' + ' ' + filename
+                    ftp.retrbinary(cmd, fp.write)
+                    fp.close()
+                    print(u"{0} downloaded.".format(save_file_name))
+                else:
+                    print(u"File: {0} is existed.".format(save_file_name))
+    except:
+        print traceback.format_exc()
+    finally:
         try:
-            ymStr = date_str[:6]
-            year = date_str[:4]
-            month = date_str[4:6]
-            day = date_str[6:]
-            doy = day_of_year(year, month, day)
-            ftp.connect(address, FTP_PORT, FTP_TIMEOUT)
-            ftp.login()
-            ftp.cwd(ymStr)
-            files = ftp.nlst()
-            for item in files:
-                filename = item.split()[-1]
-                if (filename.endwiths('.T00')) and (name.upper() in filename.upper()):
-                    remote_file_size = ftp.size(filename)
-                    suffix = filename.split('.')[0][-1].lower()
-                    save_file_name = name.lower() + doy + suffix + '.' + filename.split('.')[-1]
-                    save_path = os.path.join(save_dir, save_file_name)
-                    if not os.path.exists(save_dir):
-                        os.mkdir(save_dir)
-                    if (not os.path.exists(save_path)) or remote_file_size > os.path.getsize(save_path):
-                        print(u"Downloading: {0}, save to {1}".format(filename, save_file_name))
-                        fp = open(save_path, 'wb')
-                        cmd = 'RETR' + ' ' + filename
-                        ftp.retrbinary(cmd, fp.write)
-                        fp.close()
-                        print(u"{0} downloaded.".format(save_file_name))
-                    else:
-                        print(u"File: {0} is existed.".format(save_file_name))
+            ftp.quit()
         except:
-            print traceback.format_exc()
-        finally:
-            try:
-                ftp.quit()
-            except:
-                pass
-            del ftp
+            pass
+        del ftp
 
 
 def netr9_download(address, name, section_name, date_str, save_dir):

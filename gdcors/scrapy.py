@@ -75,6 +75,7 @@ def loop_main():
                         sop.get_brdc(yr, auto_doy, eph_save_dir)
                     if not os.path.exists(igs_eph_save_path):
                         sop.get_sp3(yr, igs_doy, eph_save_dir, sop.gen_igs_name(yr, int(igs_doy)))
+                    sopac.quit()
                 except:
                     print traceback.format_exc()
 
@@ -177,6 +178,7 @@ if __name__ == '__main__':
                         sopac.get_brdc(year, doy, eph_dir)
                     if not os.path.exists(auto_igs_path):
                         sopac.get_sp3(year, doy, eph_dir, sopac.gen_igs_name(year, int(doy)))
+                    sopac.quit()
                 except:
                     print traceback.format_exc()
             if if_organize_data:

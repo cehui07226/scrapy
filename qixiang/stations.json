@@ -1,0 +1,462 @@
+[
+  {
+    "id": 56,
+    "mark": "GDLM",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "enable": true,
+        "address": "10.149.232.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "mark": "GDHD",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.149.240.240",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "mark": "GDHL",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "enable": true,
+        "address": "10.151.120.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "mark": "GDYC",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "enable": true,
+        "address": "10.153.39.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "mark": "GDFG",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.150.88.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "mark": "GDTS",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.149.64.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "mark": "GDSC",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.149.57.168",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "mark": "GDEP",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.149.48.234",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "mark": "GDXX",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.151.184.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "mark": "GDLD",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.151.168.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "mark": "GDDQ",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.150.48.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "mark": "GDGN",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.150.64.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "mark": "GDLS",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.150.112.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "mark": "GDYS",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.150.120.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "mark": "GDSX",
+    "receivers": [
+      {
+        "type": "NETR9",
+         "enable": true,
+        "address": "10.149.224.160",
+        "sections": [
+          {
+            "name": "5S",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "mark": "GDHP",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.149.168.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "mark": "GDWH",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.150.224.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "mark": "GDJL",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.150.216.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "mark": "GDRP",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.153.56.110",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "mark": "GDJX",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.151.160.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "mark": "GDZJ",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.149.176.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "mark": "GDNA",
+    "receivers": [
+      {
+        "type": "NETR9",
+         "enable": true,
+        "address": "10.151.48.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "mark": "GDWY",
+    "receivers": [
+      {
+        "type": "NETRS",
+         "enable": true,
+        "address": "10.148.232.160",
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  }
+]

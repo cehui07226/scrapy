@@ -1,0 +1,4 @@
+D:\dev\ms\netrs\netrs\bin\Debug\netrs.exe
+D:\dev\ms\netrs\netrs\bin\Debug\netrs.pdb
+D:\dev\ms\netrs\netrs\obj\Debug\netrs.exe
+D:\dev\ms\netrs\netrs\obj\Debug\netrs.pdb

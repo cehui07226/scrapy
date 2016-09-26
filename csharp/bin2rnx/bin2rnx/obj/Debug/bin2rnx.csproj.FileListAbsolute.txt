@@ -1,0 +1,5 @@
+D:\dev\ms\bin2rnx\bin2rnx\bin\Debug\bin2rnx.exe
+D:\dev\ms\bin2rnx\bin2rnx\bin\Debug\bin2rnx.pdb
+D:\dev\ms\bin2rnx\bin2rnx\obj\Debug\bin2rnx.exe
+D:\dev\ms\bin2rnx\bin2rnx\obj\Debug\bin2rnx.pdb
+D:\dev\ms\bin2rnx\bin2rnx\obj\Debug\bin2rnx.csprojResolveAssemblyReference.cache

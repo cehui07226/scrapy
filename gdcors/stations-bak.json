@@ -1,0 +1,2420 @@
+[
+  {
+    "id": 1,
+    "mark": "GTCH",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "192.168.123.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "192.168.123.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "mark": "ZSGT",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.19.1.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          },
+          {
+            "name": "1s",
+            "suffix": "00B",
+            "interval": 1,
+            "upload": true,
+            "alias": "GDZS"
+          },
+          {
+            "name": "30s",
+            "suffix": "A",
+            "interval": 30,
+            "upload": true,
+            "alias": "GDZS"
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.19.1.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "mark": "SDGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.23.1.221",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.23.1.222",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "mark": "GMGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.7.1.211",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.7.1.212",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "mark": "SSGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.7.1.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.7.1.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "mark": "NLGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.19.1.211",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.19.1.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "mark": "JMGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.8.33.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.8.33.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "mark": "QYGT",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.17.1.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          },
+          {
+            "name": "1s",
+            "suffix": "00B",
+            "interval": 1,
+            "upload": true,
+            "alias": "GDQY"
+          },
+          {
+            "name": "30S",
+            "suffix": "A",
+            "interval": 30,
+            "upload": true,
+            "alias": "GDQY"
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.17.1.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "mark": "ZHGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.5.1.246",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.5.1.247",
+        "enable": false,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "mark": "DMGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.5.217.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.5.217.202",
+        "enable": false,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "mark": "JWGT",
+    "receivers": [
+    ]
+  },
+  {
+    "id": 12,
+    "mark": "YJGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.16.1.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.16.1.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "mark": "CZGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.20.0.101",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.20.0.102",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "mark": "STGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.6.49.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.6.49.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "mark": "MMGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.10.1.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.10.1.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "mark": "ZJGT",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.9.1.21",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          },
+          {
+            "name": "1s",
+            "suffix": "00B",
+            "interval": 1,
+            "upload": true,
+            "alias": "GDZJ"
+          },
+          {
+            "name": "30s",
+            "suffix": "A",
+            "interval": 30,
+            "upload": true,
+            "alias": "GDZJ"
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.9.1.22",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "mark": "XWGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.9.97.221",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.9.97.222",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "mark": "HZGT",
+    "receivers": [
+      {
+        "type": "NETR5",
+        "address": "192.168.125.21",
+        "enable": true,
+        "sections": [
+          {
+            "name": "DEFAULT",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "192.168.125.22",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "mark": "SWGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.14.0.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.14.0.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "mark": "HYGT",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.15.0.221",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          },
+          {
+            "name": "1s",
+            "suffix": "00B",
+            "interval": 1,
+            "upload": true,
+            "alias": "GDHY"
+          },
+          {
+            "name": "30s",
+            "suffix": "A",
+            "interval": 30,
+            "upload": true,
+            "alias": "GDHY"
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.15.0.222",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "mark": "SGGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.3.0.221",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.3.0.222",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "mark": "MZGT",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.13.0.131",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          },
+          {
+            "name": "1s",
+            "suffix": "00B",
+            "interval": 1,
+            "upload": true,
+            "alias": "GDMZ"
+          },
+          {
+            "name": "30s",
+            "suffix": "A",
+            "interval": 30,
+            "upload": true,
+            "alias": "GDMZ"
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.13.0.132",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "mark": "JYGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.21.1.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.21.1.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "mark": "YFGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.22.0.221",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.22.0.222",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "mark": "ZQGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.11.113.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.11.113.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "mark": "GZCH",
+    "receivers": [
+    ]
+  },
+  {
+    "id": 27,
+    "mark": "GZHD",
+    "receivers": [
+    ]
+  },
+  {
+    "id": 28,
+    "mark": "GZNS",
+    "receivers": [
+    ]
+  },
+  {
+    "id": 29,
+    "mark": "GZZC",
+    "receivers": [
+    ]
+  },
+  {
+    "id": 34,
+    "mark": "MCGT",
+    "receivers": [
+    ]
+  },
+  {
+    "id": 35,
+    "mark": "QINX",
+    "receivers": [
+    ]
+  },
+  {
+    "id": 36,
+    "mark": "DLSH",
+    "receivers": [
+    ]
+  },
+  {
+    "id": 37,
+    "mark": "HMSC",
+    "receivers": [
+    ]
+  },
+  {
+    "id": 38,
+    "mark": "SPGT",
+    "receivers": [
+    ]
+  },
+  {
+    "id": 39,
+    "mark": "GTGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.12.250.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.12.250.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "mark": "XNGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.13.0.151",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.13.0.152",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "mark": "DAPU",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.13.0.141",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.13.0.142",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "mark": "DLBI",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.17.1.196",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.17.1.198",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "mark": "YDGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.17.1.191",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.17.1.192",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "mark": "ZJZH",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.3.0.226",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.3.0.227",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "mark": "PSGT",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.3.0.236",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          },
+          {
+            "name": "1s",
+            "suffix": "00B",
+            "interval": 1,
+            "upload": true,
+            "alias": "GDPS"
+          },
+          {
+            "name": "30s",
+            "suffix": "A",
+            "interval": 30,
+            "upload": true,
+            "alias": "GDPS"
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.3.0.237",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "mark": "HUAZ",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.10.1.231",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.10.1.232",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "mark": "XYGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.10.96.191",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.10.96.192",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "mark": "JSGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.14.64.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.14.64.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "mark": "HJGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.11.64.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.11.64.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "mark": "FKGT",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.11.80.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          },
+          {
+            "name": "1s",
+            "suffix": "00B",
+            "interval": 1,
+            "upload": true,
+            "alias": "GDFK"
+          },
+          {
+            "name": "30s",
+            "suffix": "A",
+            "interval": 30,
+            "upload": true,
+            "alias": "GDFK"
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.11.64.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "mark": "YXGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.16.0.241",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.16.0.242",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "mark": "LJGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.9.113.231",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.9.113.232",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "mark": "LZGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.9.129.231",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.9.129.232",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "mark": "LPGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.15.255.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.15.255.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "mark": "LCGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.15.49.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.15.49.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "mark": "GDLM",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "mark": "GDHD",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "mark": "GDHL",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "mark": "GDYC",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+         {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "mark": "GDFG",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "mark": "GDTS",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "mark": "GDSC",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "mark": "GDEP",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+         {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "mark": "GDXX",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "mark": "GDLD",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "mark": "GDDQ",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "mark": "GDGN",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "mark": "GDLS",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+         {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "mark": "GDYS",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+         {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "mark": "GDSX",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "mark": "GDHP",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+         {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "mark": "GDWH",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "mark": "GDJL",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+         {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "mark": "GDRP",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "mark": "GDJX",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+         {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "mark": "GDZJ",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "mark": "GDNA",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "mark": "GDWY",
+    "receivers": [
+      {
+        "type": "SERVER",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+         {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "192.168.233.2",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "mark": "BLGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.12.251.211",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.12.251.212",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "mark": "FSGH",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.7.1.196",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.7.1.197",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "mark": "FSNS",
+    "receivers": [
+      {
+        "type": "NETR5",
+        "address": "10.7.1.166",
+        "enable": true,
+        "sections": [
+          {
+            "name": "DEFAULT",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.7.1.167",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "mark": "HZHY",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.12.252.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.12.252.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "mark": "XFGT",
+    "receivers": [
+      {
+        "type": "NETRS",
+        "address": "10.3.0.241",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "0000a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.3.0.242",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "mark": "HZHZ",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.12.251.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.12.251.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "mark": "YHGT",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.12.249.201",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.12.249.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "mark": "ADGT",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.12.250.207",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.12.250.202",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "mark": "TCGT",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.12.250.211",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      },
+      {
+        "type": "PDB318",
+        "address": "10.12.250.212",
+        "enable": true,
+        "sections": [
+          {
+            "name": "1s",
+            "suffix": "a",
+            "interval": 1,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "mark": "HZHL",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.12.0.250",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "mark": "HZZK",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.12.0.248",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "mark": "HZDY",
+    "receivers": [
+      {
+        "type": "NETR9",
+        "address": "10.12.248.250",
+        "enable": true,
+        "sections": [
+          {
+            "name": "5s",
+            "suffix": "a",
+            "interval": 5,
+            "upload": false,
+            "alias": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "mark": "GUIS",
+    "receivers": [
+    ]
+  },
+  {
+    "id": 94,
+    "mark": "QIAO",
+    "receivers": [
+    ]
+  }
+]

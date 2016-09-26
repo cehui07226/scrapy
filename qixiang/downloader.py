@@ -1,8 +1,6 @@
 # coding:utf-8
-import gc
 import os
 import traceback
-import urllib2
 from ftplib import FTP
 
 from configparser import ConfigParser
@@ -11,21 +9,53 @@ import netck
 from tools import *
 
 
-def netrs_download(url, save_path):
+def netrs_download(address, name, date_str, save_dir):
+    cp = ConfigParser()
+    cp.read('settings.ini')
+    FTP_TIMEOUT = cp.getint('FTP', 'FTP_TIMEOUT')
+    FTP_PORT = cp.getint('FTP', 'FTP_PORT')
+    FTP_DEBUG_LEVEL = cp.getint('FTP', 'FTP_DEBUG_LEVEL')
+    ftp = FTP()
+    ftp.set_debuglevel(FTP_DEBUG_LEVEL)
     try:
-        print(u"Downloading: {0}".format(url))
-        req = urllib2.urlopen(url, timeout=15)
-        with open(save_path, 'wb') as fp:
-            fp.write(req.read())
-            fp.close()
-        req.close()
-        gc.collect()
-        print(u"URL: {0} downloaded.".format(url))
+        ymStr = date_str[:6]
+        year = date_str[:4]
+        month = date_str[4:6]
+        day = date_str[6:]
+        doy = day_of_year(year, month, day)
+        ftp.connect(address, FTP_PORT, FTP_TIMEOUT)
+        ftp.login()
+        ftp.cwd(ymStr)
+        files = ftp.nlst()
+        for item in files:
+            filename = item.split()[-1]
+            if (filename.endwiths('.T00')) and (name.upper() in filename.upper()):
+                remote_file_size = ftp.size(filename)
+                suffix = filename.split('.')[0][-1].lower()
+                save_file_name = name.lower() + doy + suffix + '.' + filename.split('.')[-1]
+                save_path = os.path.join(save_dir, save_file_name)
+                if not os.path.exists(save_dir):
+                    os.mkdir(save_dir)
+                if (not os.path.exists(save_path)) or remote_file_size > os.path.getsize(save_path):
+                    print(u"Downloading: {0}, save to {1}".format(filename, save_file_name))
+                    fp = open(save_path, 'wb')
+                    cmd = 'RETR' + ' ' + filename
+                    ftp.retrbinary(cmd, fp.write)
+                    fp.close()
+                    print(u"{0} downloaded.".format(save_file_name))
+                else:
+                    print(u"File: {0} is existed.".format(save_file_name))
     except:
-        pass
+        print traceback.format_exc()
+    finally:
+        try:
+            ftp.quit()
+        except:
+            pass
+        del ftp
 
 
-def netr9_download(address, name, section_name, suffix, date_str, save_dir):
+def netr9_download(address, name, section_name, date_str, save_dir):
     cp = ConfigParser()
     cp.read('settings.ini')
     FTP_TIMEOUT = cp.getint('FTP', 'FTP_TIMEOUT')
@@ -47,6 +77,7 @@ def netr9_download(address, name, section_name, suffix, date_str, save_dir):
             filename = item.split()[-1]
             if ('.T0' in filename.upper()) and (name.upper() in filename.upper()):
                 remote_file_size = ftp.size(filename)
+                suffix = filename.split('.')[0][-1].lower()
                 save_file_name = name.lower() + doy + suffix + '.' + filename.split('.')[-1]
                 save_path = os.path.join(save_dir, save_file_name)
                 if not os.path.exists(save_dir):
@@ -143,17 +174,9 @@ def download_station(dt, **stn):
             save_dir = os.path.join(BINARY_LOCAL_DIRECTORY, year, doy)
             if not os.path.exists(save_dir):
                 os.makedirs(save_dir)
-            system_name = get_system_name(address)
-            if len(system_name) == 0:
-                continue
             for section in sections:
-                suffix = section.get('suffix')
-                http_prefix = "http://" + address + "/download/" + ymdStr[:6] + "/"
-                remote_filename = system_name + ymdStr + suffix + ".T00"
-                url = http_prefix + remote_filename
-                local_file_name = mark.lower() + doy + suffix[-1] + ".T00"
-                save_path = os.path.join(save_dir, local_file_name)
-                os.system('netrs.exe ' + url + ' ' + save_path)
+                netrs_download(address, mark, ymdStr, save_dir)
+
         elif receiver_type == 'NETR9':
             for section in sections:
                 section_name = section.get('name')
@@ -165,7 +188,7 @@ def download_station(dt, **stn):
                 save_dir = os.path.join(BINARY_LOCAL_DIRECTORY, year, doy)
                 if not os.path.exists(save_dir):
                     os.makedirs(save_dir)
-                netr9_download(address, mark, section_name, suffix, ymdStr, save_dir)
+                netr9_download(address, mark, section_name, ymdStr, save_dir)
 
         elif receiver_type == 'NETR5':
             enable_netr5 = cp.getint('NETR9', 'ENABLE_DOWNLOAD')
@@ -178,7 +201,7 @@ def download_station(dt, **stn):
             for section in sections:
                 suffix = section.get('suffix')
                 section_name = section.get('name')
-                netr9_download(address, mark, section_name, suffix, ymdStr, save_dir)
+                netr9_download(address, mark, section_name, ymdStr, save_dir)
 
         elif receiver_type == 'PDB318':
             enable_pdb318 = cp.getint('BDS', 'ENABLE_DOWNLOAD')

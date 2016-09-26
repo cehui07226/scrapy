@@ -2,6 +2,7 @@
 import argparse
 import json
 import time
+
 from downloader import *
 from eph import SOPAC
 from reorganize import reorganize_binary, reorganize_gps_rinex, copy_rinex_from_remote_server
@@ -67,16 +68,16 @@ def loop_main():
                     auto_doy = day_of_year(yr, auto_date.month, auto_date.day)
                     eph_save_dir = config.get('EPH', 'EPH_DIR')
                     auto_eph_save_path = os.path.join(eph_save_dir, 'auto' + auto_doy + '0.' + str(dt.year)[2:] + 'n')
-                    igs_eph_save_path = os.path.join(eph_save_dir, sop.gen_igs_name(year, int(igs_doy)))
+                    igs_eph_save_path = os.path.join(eph_save_dir, sop.gen_igs_name(year, int(igs_doy)).replace('.Z', ''))
                     if not os.path.exists(eph_save_dir):
                         os.makedirs(eph_save_dir)
                     if not os.path.exists(auto_eph_save_path):
                         sop.get_brdc(yr, auto_doy, eph_save_dir)
                     if not os.path.exists(igs_eph_save_path):
-                        sop.get_sp3(yr, igs_doy, eph_save_dir, sop.gen_igs_name(yr, int(igs_doy)).replace('.Z', ''))
-
+                        sop.get_sp3(yr, igs_doy, eph_save_dir, sop.gen_igs_name(yr, int(igs_doy)))
                 except:
                     print traceback.format_exc()
+
             if (hour == history_download_time_hour) and (minute == history_download_time_min):
                 for j in range(1, days_before + 1):
                     current_date = now - timedelta(days=(days_before + 1 - j))

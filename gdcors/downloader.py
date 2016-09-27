@@ -30,21 +30,17 @@ def netrs_download(address, name, date_str, save_dir):
         for item in files:
             filename = item.split()[-1]
             if (filename.endswith('.T00')) and (name.upper() in filename.upper()) and (date_str in filename):
-                remote_file_size = ftp.size(filename)
                 suffix = filename.split('.')[0][-1].lower()
                 save_file_name = name.lower() + doy + suffix + '.' + filename.split('.')[-1]
                 save_path = os.path.join(save_dir, save_file_name)
                 if not os.path.exists(save_dir):
                     os.mkdir(save_dir)
-                if (not os.path.exists(save_path)) or remote_file_size > os.path.getsize(save_path):
-                    print(u"Downloading: {0}, save to {1}".format(filename, save_file_name))
-                    fp = open(save_path, 'wb')
-                    cmd = 'RETR' + ' ' + filename
-                    ftp.retrbinary(cmd, fp.write)
-                    fp.close()
-                    print(u"{0} downloaded.".format(save_file_name))
-                else:
-                    print(u"File: {0} is existed.".format(save_file_name))
+                print(u"Downloading: {0}, save to {1}".format(filename, save_file_name))
+                fp = open(save_path, 'wb')
+                cmd = 'RETR' + ' ' + filename
+                ftp.retrbinary(cmd, fp.write)
+                fp.close()
+                print(u"{0} downloaded.".format(save_file_name))
     except:
         print traceback.format_exc()
     finally:

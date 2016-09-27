@@ -29,7 +29,7 @@ def netrs_download(address, name, date_str, save_dir):
         files = ftp.nlst()
         for item in files:
             filename = item.split()[-1]
-            if (filename.endwiths('.T00')) and (name.upper() in filename.upper()):
+            if (filename.endswith('.T00')) and (name.upper() in filename.upper()) and (date_str in filename):
                 remote_file_size = ftp.size(filename)
                 suffix = filename.split('.')[0][-1].lower()
                 save_file_name = name.lower() + doy + suffix + '.' + filename.split('.')[-1]

@@ -9,6 +9,7 @@ from reorganize import reorganize_binary, reorganize_gps_rinex, copy_rinex_from_
 from report import make_reports
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+os.chdir(BASE_DIR)
 
 
 def loop_main():
@@ -99,6 +100,7 @@ def loop_main():
 
 
 if __name__ == '__main__':
+
     parser = argparse.ArgumentParser()
     parser.add_argument('-n', '--ndays', type=int, help='days before today.')
     # 0 for False, 1 for True

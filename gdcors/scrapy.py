@@ -67,15 +67,15 @@ def loop_main():
                     igs_doy = day_of_year(yr, igs_date.month, igs_date.day)
                     auto_doy = day_of_year(yr, auto_date.month, auto_date.day)
                     eph_save_dir = config.get('EPH', 'EPH_DIR')
-                    auto_eph_save_path = os.path.join(eph_save_dir, 'auto' + auto_doy + '0.' + str(dt.year)[2:] + 'n')
-                    igs_eph_save_path = os.path.join(eph_save_dir, sop.gen_igs_name(year, int(igs_doy)).replace('.Z', ''))
+                    auto_eph_save_path = os.path.join(eph_save_dir, 'auto' + auto_doy + '0.' + str(yr)[2:] + 'n')
+                    igs_eph_save_path = os.path.join(eph_save_dir, sop.gen_igs_name(yr, int(igs_doy)).replace('.Z', ''))
                     if not os.path.exists(eph_save_dir):
                         os.makedirs(eph_save_dir)
                     if not os.path.exists(auto_eph_save_path):
                         sop.get_brdc(yr, auto_doy, eph_save_dir)
                     if not os.path.exists(igs_eph_save_path):
                         sop.get_sp3(yr, igs_doy, eph_save_dir, sop.gen_igs_name(yr, int(igs_doy)))
-                    sopac.quit()
+                    sop.quit()
                 except:
                     print traceback.format_exc()
 

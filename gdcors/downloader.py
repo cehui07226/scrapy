@@ -1,12 +1,28 @@
 # coding:utf-8
+import gc
 import os
 import traceback
+import urllib2
 from ftplib import FTP
 
 from configparser import ConfigParser
 
 import netck
 from tools import *
+
+
+def netrs_download_http(url, save_path):
+    try:
+        print(u"Downloading: {0}".format(url))
+        req = urllib2.urlopen(url, timeout=15)
+        with open(save_path, 'wb') as fp:
+            fp.write(req.read())
+            fp.close()
+        req.close()
+        gc.collect()
+        print(u"URL: {0} downloaded.".format(url))
+    except:
+        pass
 
 
 def netrs_download(address, name, date_str, save_dir):
@@ -41,8 +57,8 @@ def netrs_download(address, name, date_str, save_dir):
                 ftp.retrbinary(cmd, fp.write)
                 fp.close()
                 print(u"{0} downloaded.".format(save_file_name))
-    except:
-        print traceback.format_exc()
+    except Exception as e:
+        raise e
     finally:
         try:
             ftp.quit()
@@ -319,7 +335,21 @@ def download_station(dt, **stn):
             if not os.path.exists(save_dir):
                 os.makedirs(save_dir)
             for section in sections:
-                netrs_download(address, mark, ymdStr, save_dir)
+                try:
+                    netrs_download(address, mark, ymdStr, save_dir)
+                except:
+                    print traceback.format_exc()
+                    try:
+                        system_name = get_system_name(address)
+                        suffix = section.get('suffix')
+                        http_prefix = "http://" + address + "/download/" + ymdStr[:6] + "/"
+                        remote_filename = system_name + ymdStr + suffix + ".T00"
+                        url = http_prefix + remote_filename
+                        local_file_name = mark.lower() + doy + suffix[-1] + ".T00"
+                        save_path = os.path.join(save_dir, local_file_name)
+                        os.system('netrs.exe ' + url + ' ' + save_path)
+                    except:
+                        print traceback.format_exc()
 
         elif receiver_type == 'NETR9':
             for section in sections:
